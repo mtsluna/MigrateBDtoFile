@@ -1,0 +1,25 @@
+Table: alumno
+Columns: alumno_dni, int, 11; Columns: alumno_nombre, varchar, 75; Columns: alumno_apellido, varchar, 75; 
+25781979, Alejandra, Luna; 
+26748253, Roberto, Gonzales; 
+41659894, Matías, Luna; 
+Table: carrera
+Columns: carrera_cod, int, 11; Columns: carrera_nombre, varchar, 75; 
+1, Ingenieria en Sistemas; 
+4, Ingenieria Civil; 
+Table: examen
+Columns: fk_alumno_dni, int, 11; Columns: fk_materia_cod, int, 11; Columns: examen_fecha, date, 10; Columns: examen_nota, int, 2; 
+Table: inscripcion
+Columns: inscripcion_cod, int, 11; Columns: fk_carrera_cod, int, 11; Columns: fk_alumno_dni, int, 11; 
+2, 4, 25781979; 
+Table: materia
+Columns: materia_cod, int, 11; Columns: materia_nombre, varchar, 75; Columns: fk_profesor_cod, int, 11; 
+1, Programacion I, 1; 
+3, Programacion II, 4165; 
+7, Laboratorio IV, 1; 
+8, Programacion V, 1; 
+9, Programacion VI, 1; 
+Table: profesor
+Columns: profesor_cod, int, 11; Columns: profesor_nombre, varchar, 75; Columns: profesor_apellido, varchar, 75; 
+1, Matías, Luna; 
+4165, Gonzalo, Luna; 
